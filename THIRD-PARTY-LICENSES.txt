@@ -1,0 +1,1190 @@
+THIRD-PARTY LICENSES AND COPYRIGHT NOTICES
+Offline score / MIDI HTML application
+Retrieved from public jsDelivr npm package files: 2026-10-25T09:22:51.434Z
+
+SCOPE AND VERSION QUALIFICATIONS
+===============================
+This notice accompanies inline copies of these three browser bundles:
+- opensheetmusicdisplay 1.8.9, build/opensheetmusicdisplay.min.js
+- tone 14.8.49, build/Tone.js
+- @tonejs/midi 2.0.28, build/Midi.js
+
+There are 26 component sections below, counting unique npm package names.
+Copyright and license texts are reproduced from the fetched upstream files.
+This file does not license the application's own code, scores, recordings,
+or any unrelated assets.
+
+The three top-level versions and OSMD's fixed jszip/vexflow versions are known.
+Other dependency versions are NOT asserted to be the versions embedded in the
+published bundles. They are reference versions confirmed by resolving the
+published dependency ranges on the retrieval date. Each section records both
+the requested range and the version returned by package.json. Resolving a range
+today does not reconstruct the historical build lockfile. The dependency graph
+is conservatively included; tree-shaken or browser-replaced dependencies may
+not actually be present in the browser bundle.
+
+Tone's standardized-audio-context range has changed its transitive dependency
+ranges over time. Additional notices for confirmed lower-bound historical
+packages (25.3.29, automation-events 4.0.20, @babel/runtime 7.18.9, tslib 2.3.1)
+are retained below alongside current range-resolved reference versions.
+regenerator-runtime 0.13.11 is included conservatively for @babel/runtime
+7.18.9's ^0.13.4 dependency; its presence in Tone's minified bundle is not
+established. No claim is made that the full historical graph was reconstructed.
+
+Only runtime dependencies were traversed. Development dependencies and @types
+packages were excluded. OSMD's optional native gl dependency was excluded from
+this browser-only notice, not treated as a required browser runtime component.
+The npm package file lists were obtained via:
+https://data.jsdelivr.com/v1/package/npm/<name>@<version>/flat
+All full package and license source URLs are recorded in their sections.
+
+KNOWN LIMITATIONS / RELEASE FOLLOW-UP
+====================================
+1. The OSMD bundle refers to opensheetmusicdisplay.min.js.LICENSE.txt, but
+   https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@1.8.9/build/opensheetmusicdisplay.min.js.LICENSE.txt
+   returns HTTP 404. The published package file list contains no such file.
+   OSMD's actual package LICENSE and AUTHORS are included instead, together
+   with the declared runtime dependencies' licenses. This does not prove that
+   every notice stripped into the unavailable extracted notice was recovered.
+   Obtain that original extracted notice or a reproducible build manifest from
+   upstream before claiming a complete audit of the minified OSMD bundle.
+2. Exact historical transitive versions remain unverified. Range-resolved and
+   historical reference notices do not replace a bundle-specific lockfile/SBOM.
+3. isarray 1.0.0 has no standalone LICENSE file in its published package;
+   its full MIT license and copyright are present in README.md and reproduced.
+4. JSZip permits MIT OR GPL-3.0-or-later. This distribution selects the MIT
+   option; only that option's complete text is reproduced below.
+5. pako metadata is MIT AND Zlib. Both its root MIT license and its embedded
+   zlib-derived source notice are reproduced, rather than treating it as MIT only.
+6. Keep this file with every distributed copy of index.html. This task did not
+   change index.html, inline code, or the broken upstream license-file reference.
+
+COMPONENT NOTICES
+=================
+
+
+[01] opensheetmusicdisplay
+------------------------------------------------------------------------
+Reference version: 1.8.9
+Declared package license: BSD-3-Clause
+Metadata source: https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@1.8.9/package.json
+Verified requests (not a historical build lock):
+  opensheetmusicdisplay@1.8.9 -> 1.8.9
+Declared runtime dependencies at reference version: {"@types/vexflow":"^1.2.38","jszip":"3.10.1","loglevel":"^1.8.0","typescript-collections":"^1.3.3","vexflow":"1.2.93"}
+
+--- Upstream text: opensheetmusicdisplay@1.8.9/AUTHORS ---
+Source: https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@1.8.9/AUTHORS
+
+Andrea Condoluci <a.condoluci@phonicscore.com> (http://llliii.ooo)
+Oliver Hörbinger <o.hoerbinger@phonicscore.com> ()
+Matthias Uiberacker <m.uiberacker@phonicscore.com> ()
+Sebastian Haas <s.haas@phonicscore.com> (http://sebastianhaas.at)
+Benjamin Giesinger <benjamin.giesinger@gmail.com> (http://benjamingiesinger.de)
+Simon Schmid <s.schmid@phonicscore.com> (https://github.com/sschmidTU)
+
+Contributors:
+Pieter Hartzer (https://github.com/PieterHartzer) (https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/pull/327)
+(https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/graphs/contributors)
+
+--- Upstream text: opensheetmusicdisplay@1.8.9/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@1.8.9/LICENSE
+
+Copyright 2019 PhonicScore
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+[02] tone
+------------------------------------------------------------------------
+Reference version: 14.8.49
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/tone@14.8.49/package.json
+Verified requests (not a historical build lock):
+  tone@14.8.49 -> 14.8.49
+Declared runtime dependencies at reference version: {"standardized-audio-context":"^25.3.29","tslib":"^2.3.1"}
+
+--- Upstream text: tone@14.8.49/build/Tone.js.LICENSE.txt ---
+Source: https://cdn.jsdelivr.net/npm/tone@14.8.49/build/Tone.js.LICENSE.txt
+
+/**
+ * Tone.js
+ * @author Yotam Mann
+ * @license http://opensource.org/licenses/MIT MIT License
+ * @copyright 2014-2019 Yotam Mann
+ */
+
+--- Upstream text: tone@14.8.49/LICENSE.md ---
+Source: https://cdn.jsdelivr.net/npm/tone@14.8.49/LICENSE.md
+
+MIT License
+
+Copyright (c) 2014-2020 Yotam Mann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+[03] @tonejs/midi
+------------------------------------------------------------------------
+Reference version: 2.0.28
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/@tonejs/midi@2.0.28/package.json
+Verified requests (not a historical build lock):
+  @tonejs/midi@2.0.28 -> 2.0.28
+Declared runtime dependencies at reference version: {"array-flatten":"^3.0.0","midi-file":"^1.2.2"}
+
+--- Upstream text: @tonejs/midi@2.0.28/LICENSE.md ---
+Source: https://cdn.jsdelivr.net/npm/@tonejs/midi@2.0.28/LICENSE.md
+
+[The MIT License](http://opensource.org/licenses/MIT)
+
+Copyright © 2016 Yotam Mann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+[04] jszip
+------------------------------------------------------------------------
+Reference version: 3.10.1
+Declared package license: (MIT OR GPL-3.0-or-later)
+Metadata source: https://cdn.jsdelivr.net/npm/jszip@3.10.1/package.json
+Verified requests (not a historical build lock):
+  jszip@3.10.1 -> 3.10.1
+Declared runtime dependencies at reference version: {"lie":"~3.3.0","pako":"~1.0.2","readable-stream":"~2.3.6","setimmediate":"^1.0.5"}
+License selection for this distribution: MIT. GPL alternative is not selected.
+
+--- Upstream text: jszip@3.10.1/LICENSE.markdown ---
+Source: https://cdn.jsdelivr.net/npm/jszip@3.10.1/LICENSE.markdown
+
+JSZip is dual licensed. At your choice you may use it under the MIT license *or* the GPLv3
+license.
+
+The MIT License
+===============
+
+Copyright (c) 2009-2016 Stuart Knightley, David Duponchel, Franz Buchinger, António Afonso
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+[05] loglevel
+------------------------------------------------------------------------
+Reference version: 1.9.2
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/loglevel@1.9.2/package.json
+Verified requests (not a historical build lock):
+  loglevel@^1.8.0 -> 1.9.2
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: loglevel@1.9.2/LICENSE-MIT ---
+Source: https://cdn.jsdelivr.net/npm/loglevel@1.9.2/LICENSE-MIT
+
+Copyright (c) 2013 Tim Perry
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+[06] typescript-collections
+------------------------------------------------------------------------
+Reference version: 1.3.3
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/typescript-collections@1.3.3/package.json
+Verified requests (not a historical build lock):
+  typescript-collections@^1.3.3 -> 1.3.3
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: typescript-collections@1.3.3/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/typescript-collections@1.3.3/LICENSE
+
+The MIT License
+
+Copyright (c) 2010-2017 Tomasz Ciborski
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+[07] vexflow
+------------------------------------------------------------------------
+Reference version: 1.2.93
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/vexflow@1.2.93/package.json
+Verified requests (not a historical build lock):
+  vexflow@1.2.93 -> 1.2.93
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: vexflow@1.2.93/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/vexflow@1.2.93/LICENSE
+
+Vex Flow - A JavaScript library for rendering music notation.
+Copyright (c) 2010 Mohit Muthanna Cheppudira
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+--- Bundled glyph provenance supplement ---
+Source: https://cdn.jsdelivr.net/npm/vexflow@1.2.93/src/fonts/gonville_all.js
+The original_font_information metadata identifies Gonville-18, Version 0.1.8904,
+and states: "No copyright is claimed on this font file."
+This is reproduced as upstream provenance, not a claim that all VexFlow code
+is public domain. The VexFlow MIT license above remains applicable.
+
+
+[08] standardized-audio-context
+------------------------------------------------------------------------
+Reference version: 25.3.77
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/standardized-audio-context@25.3.77/package.json
+Verified requests (not a historical build lock):
+  standardized-audio-context@^25.3.29 -> 25.3.77
+  standardized-audio-context@25.3.29 -> 25.3.29
+Declared runtime dependencies at reference version: {"@babel/runtime":"^7.25.6","automation-events":"^7.0.9","tslib":"^2.7.0"}
+
+--- Upstream text: standardized-audio-context@25.3.77/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/standardized-audio-context@25.3.77/LICENSE
+
+MIT License
+
+Copyright (c) 2024 Christoph Guttandin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--- Upstream text: standardized-audio-context@25.3.29/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/standardized-audio-context@25.3.29/LICENSE
+
+MIT License
+
+Copyright (c) 2022 Christoph Guttandin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+[09] tslib
+------------------------------------------------------------------------
+Reference version: 2.8.1
+Declared package license: 0BSD
+Metadata source: https://cdn.jsdelivr.net/npm/tslib@2.8.1/package.json
+Verified requests (not a historical build lock):
+  tslib@^2.3.1 -> 2.8.1
+  tslib@^2.7.0 -> 2.8.1
+  tslib@^2.8.1 -> 2.8.1
+  tslib@2.3.1 -> 2.3.1
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: tslib@2.8.1/CopyrightNotice.txt ---
+Source: https://cdn.jsdelivr.net/npm/tslib@2.8.1/CopyrightNotice.txt
+
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+--- Upstream text: tslib@2.8.1/LICENSE.txt ---
+Source: https://cdn.jsdelivr.net/npm/tslib@2.8.1/LICENSE.txt
+
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+--- Upstream text: tslib@2.3.1/LICENSE.txt ---
+Source: https://cdn.jsdelivr.net/npm/tslib@2.3.1/LICENSE.txt
+
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+
+[10] array-flatten
+------------------------------------------------------------------------
+Reference version: 3.0.0
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/array-flatten@3.0.0/package.json
+Verified requests (not a historical build lock):
+  array-flatten@^3.0.0 -> 3.0.0
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: array-flatten@3.0.0/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/array-flatten@3.0.0/LICENSE
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+[11] midi-file
+------------------------------------------------------------------------
+Reference version: 1.2.4
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/midi-file@1.2.4/package.json
+Verified requests (not a historical build lock):
+  midi-file@^1.2.2 -> 1.2.4
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: midi-file@1.2.4/LICENSE.md ---
+Source: https://cdn.jsdelivr.net/npm/midi-file@1.2.4/LICENSE.md
+
+[The MIT License](http://opensource.org/licenses/MIT)
+
+Copyright © 2016 Carter Thaxton
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+[12] lie
+------------------------------------------------------------------------
+Reference version: 3.3.0
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/lie@3.3.0/package.json
+Verified requests (not a historical build lock):
+  lie@~3.3.0 -> 3.3.0
+Declared runtime dependencies at reference version: {"immediate":"~3.0.5"}
+
+--- Upstream text: lie@3.3.0/license.md ---
+Source: https://cdn.jsdelivr.net/npm/lie@3.3.0/license.md
+
+#Copyright (c) 2014-2018 Calvin Metcalf, Jordan Harband
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
+
+
+[13] pako
+------------------------------------------------------------------------
+Reference version: 1.0.11
+Declared package license: (MIT AND Zlib)
+Metadata source: https://cdn.jsdelivr.net/npm/pako@1.0.11/package.json
+Verified requests (not a historical build lock):
+  pako@~1.0.2 -> 1.0.11
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: pako@1.0.11/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/pako@1.0.11/LICENSE
+
+(The MIT License)
+
+Copyright (C) 2014-2017 by Vitaly Puzrin and Andrei Tuputcyn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+--- Additional Zlib source notice ---
+Source: https://cdn.jsdelivr.net/npm/pako@1.0.11/lib/zlib/deflate.js
+Also verified verbatim in https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.js
+
+// (C) 1995-2013 Jean-loup Gailly and Mark Adler
+// (C) 2014-2017 Vitaly Puzrin and Andrey Tupitsin
+//
+// This software is provided 'as-is', without any express or implied
+// warranty. In no event will the authors be held liable for any damages
+// arising from the use of this software.
+//
+// Permission is granted to anyone to use this software for any purpose,
+// including commercial applications, and to alter it and redistribute it
+// freely, subject to the following restrictions:
+//
+// 1. The origin of this software must not be misrepresented; you must not
+//   claim that you wrote the original software. If you use this software
+//   in a product, an acknowledgment in the product documentation would be
+//   appreciated but is not required.
+// 2. Altered source versions must be plainly marked as such, and must not be
+//   misrepresented as being the original software.
+// 3. This notice may not be removed or altered from any source distribution.
+
+
+[14] readable-stream
+------------------------------------------------------------------------
+Reference version: 2.3.8
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/readable-stream@2.3.8/package.json
+Verified requests (not a historical build lock):
+  readable-stream@~2.3.6 -> 2.3.8
+Declared runtime dependencies at reference version: {"core-util-is":"~1.0.0","inherits":"~2.0.3","isarray":"~1.0.0","process-nextick-args":"~2.0.0","safe-buffer":"~5.1.1","string_decoder":"~1.1.1","util-deprecate":"~1.0.1"}
+
+--- Upstream text: readable-stream@2.3.8/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/readable-stream@2.3.8/LICENSE
+
+Node.js is licensed for use as follows:
+
+"""
+Copyright Node.js contributors. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+"""
+
+This license applies to parts of Node.js originating from the
+https://github.com/joyent/node repository:
+
+"""
+Copyright Joyent, Inc. and other Node contributors. All rights reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+"""
+
+
+[15] setimmediate
+------------------------------------------------------------------------
+Reference version: 1.0.5
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/setimmediate@1.0.5/package.json
+Verified requests (not a historical build lock):
+  setimmediate@^1.0.5 -> 1.0.5
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: setimmediate@1.0.5/LICENSE.txt ---
+Source: https://cdn.jsdelivr.net/npm/setimmediate@1.0.5/LICENSE.txt
+
+Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+[16] @babel/runtime
+------------------------------------------------------------------------
+Reference version: 7.29.10
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/@babel/runtime@7.29.10/package.json
+Verified requests (not a historical build lock):
+  @babel/runtime@^7.25.6 -> 7.29.10
+  @babel/runtime@^7.29.2 -> 7.29.10
+  @babel/runtime@7.22.6 -> 7.22.6
+  @babel/runtime@7.18.9 -> 7.18.9
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: @babel/runtime@7.29.10/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/@babel/runtime@7.29.10/LICENSE
+
+MIT License
+
+Copyright (c) 2014-present Sebastian McKenzie and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+--- Upstream text: @babel/runtime@7.18.9/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/@babel/runtime@7.18.9/LICENSE
+
+MIT License
+
+Copyright (c) 2014-present Sebastian McKenzie and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+[17] automation-events
+------------------------------------------------------------------------
+Reference version: 7.1.19
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/automation-events@7.1.19/package.json
+Verified requests (not a historical build lock):
+  automation-events@^7.0.9 -> 7.1.19
+  automation-events@7.0.9 -> 7.0.9
+  automation-events@4.0.20 -> 4.0.20
+Declared runtime dependencies at reference version: {"@babel/runtime":"^7.29.2","tslib":"^2.8.1"}
+
+--- Upstream text: automation-events@7.1.19/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/automation-events@7.1.19/LICENSE
+
+MIT License
+
+Copyright (c) 2026 Christoph Guttandin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--- Upstream text: automation-events@7.0.9/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/automation-events@7.0.9/LICENSE
+
+MIT License
+
+Copyright (c) 2024 Christoph Guttandin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--- Upstream text: automation-events@4.0.20/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/automation-events@4.0.20/LICENSE
+
+MIT License
+
+Copyright (c) 2022 Christoph Guttandin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+[18] immediate
+------------------------------------------------------------------------
+Reference version: 3.0.6
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/immediate@3.0.6/package.json
+Verified requests (not a historical build lock):
+  immediate@~3.0.5 -> 3.0.6
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: immediate@3.0.6/LICENSE.txt ---
+Source: https://cdn.jsdelivr.net/npm/immediate@3.0.6/LICENSE.txt
+
+Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, Domenic Denicola, Brian Cavalier
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+[19] core-util-is
+------------------------------------------------------------------------
+Reference version: 1.0.3
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/core-util-is@1.0.3/package.json
+Verified requests (not a historical build lock):
+  core-util-is@~1.0.0 -> 1.0.3
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: core-util-is@1.0.3/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/core-util-is@1.0.3/LICENSE
+
+Copyright Node.js contributors. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+
+
+[20] inherits
+------------------------------------------------------------------------
+Reference version: 2.0.4
+Declared package license: ISC
+Metadata source: https://cdn.jsdelivr.net/npm/inherits@2.0.4/package.json
+Verified requests (not a historical build lock):
+  inherits@~2.0.3 -> 2.0.4
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: inherits@2.0.4/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/inherits@2.0.4/LICENSE
+
+The ISC License
+
+Copyright (c) Isaac Z. Schlueter
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+
+[21] isarray
+------------------------------------------------------------------------
+Reference version: 1.0.0
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/isarray@1.0.0/package.json
+Verified requests (not a historical build lock):
+  isarray@~1.0.0 -> 1.0.0
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: isarray@1.0.0/README.md (License section) ---
+Source: https://cdn.jsdelivr.net/npm/isarray@1.0.0/README.md
+
+(MIT)
+
+Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+[22] process-nextick-args
+------------------------------------------------------------------------
+Reference version: 2.0.1
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/process-nextick-args@2.0.1/package.json
+Verified requests (not a historical build lock):
+  process-nextick-args@~2.0.0 -> 2.0.1
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: process-nextick-args@2.0.1/license.md ---
+Source: https://cdn.jsdelivr.net/npm/process-nextick-args@2.0.1/license.md
+
+# Copyright (c) 2015 Calvin Metcalf
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.**
+
+
+[23] safe-buffer
+------------------------------------------------------------------------
+Reference version: 5.1.2
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/safe-buffer@5.1.2/package.json
+Verified requests (not a historical build lock):
+  safe-buffer@~5.1.1 -> 5.1.2
+  safe-buffer@~5.1.0 -> 5.1.2
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: safe-buffer@5.1.2/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/safe-buffer@5.1.2/LICENSE
+
+The MIT License (MIT)
+
+Copyright (c) Feross Aboukhadijeh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+[24] string_decoder
+------------------------------------------------------------------------
+Reference version: 1.1.1
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/string_decoder@1.1.1/package.json
+Verified requests (not a historical build lock):
+  string_decoder@~1.1.1 -> 1.1.1
+Declared runtime dependencies at reference version: {"safe-buffer":"~5.1.0"}
+
+--- Upstream text: string_decoder@1.1.1/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/string_decoder@1.1.1/LICENSE
+
+Node.js is licensed for use as follows:
+
+"""
+Copyright Node.js contributors. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+"""
+
+This license applies to parts of Node.js originating from the
+https://github.com/joyent/node repository:
+
+"""
+Copyright Joyent, Inc. and other Node contributors. All rights reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+"""
+
+
+[25] util-deprecate
+------------------------------------------------------------------------
+Reference version: 1.0.2
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/util-deprecate@1.0.2/package.json
+Verified requests (not a historical build lock):
+  util-deprecate@~1.0.1 -> 1.0.2
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: util-deprecate@1.0.2/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/util-deprecate@1.0.2/LICENSE
+
+(The MIT License)
+
+Copyright (c) 2014 Nathan Rajlich <nathan@tootallnate.net>
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+[26] regenerator-runtime
+------------------------------------------------------------------------
+Reference version: 0.13.11
+Declared package license: MIT
+Metadata source: https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.11/package.json
+Verified requests (not a historical build lock):
+  regenerator-runtime@^0.13.4 -> 0.13.11
+Declared runtime dependencies at reference version: {}
+
+--- Upstream text: regenerator-runtime@0.13.11/LICENSE ---
+Source: https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.11/LICENSE
+
+MIT License
+
+Copyright (c) 2014-present, Facebook, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+END OF THIRD-PARTY NOTICES
